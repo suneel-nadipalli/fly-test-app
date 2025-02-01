@@ -20,7 +20,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Hell from GitHub CI/CD.</li>
+          <li>Hello from GitHub CI/CD - Final.</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
