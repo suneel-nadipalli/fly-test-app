@@ -7,15 +7,17 @@ const APITestPage = async () => {
 
   try {
     const apiURL = process.env.NEXT_PUBLIC_API_URL;
+
+    console.log("API URL:", apiURL);
     
     if (!apiURL) {
-      throw new Error("NEXT_PUBLIC_API_URL is not defined");
+      console.log("NEXT_PUBLIC_API_URL is not defined");
     }
 
     const res = await fetch(`${apiURL}/ping`);
 
     if (!res.ok) {
-      throw new Error(`API responded with status: ${res.status}`);
+      console.log(`API responded with status: ${res.status}`);
     }
 
     data = await res.json();
