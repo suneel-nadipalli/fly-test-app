@@ -1,5 +1,6 @@
-import React from 'react'
+"use server";
 
+import React from 'react'
 
 const APITestPage = async () => {
 
