@@ -4,7 +4,11 @@ import React from 'react'
 
 const APITestPage = async () => {
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/ping`);
+  // const apiURL = process.env.NEXT_PUBLIC_API_URL;
+
+  const apiURL = "https://test-api-small.fly.dev";
+
+  const res = await fetch(`${apiURL}/ping`);
 
   const data = await res.json();
 
