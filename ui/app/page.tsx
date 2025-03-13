@@ -7,6 +7,7 @@ export default function Home() {
         Home Page
       </h1>
       <Link href="/apitest"> API Test Page</Link>
+      <Link href="/predict"> Predict Page</Link>
     </main>
   );
 }
