@@ -40,10 +40,8 @@ jobs:
 
       - name: Install Fly CLI
         run: |
-          curl -L https://fly.io/install.sh | sh
-          echo "$HOME/.fly/bin" >> $GITHUB_PATH  # Ensure Fly.io is in PATH
-          # echo "NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL" >> .env.local
+          superfly/flyctl-actions/setup-flyctl@main
 
       - name: Deploy UI to Fly.io
         run: |
-          fly deploy --remote-only --strategy immediate --config fly.toml
+          fly deploy --remote-only --strategy immediate
