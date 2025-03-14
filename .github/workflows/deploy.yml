@@ -40,7 +40,8 @@ jobs:
 
       - name: Install Fly CLI
         run: |
-          superfly/flyctl-actions/setup-flyctl@main
+          curl -L https://fly.io/install.sh | sh
+          echo "$HOME/.fly/bin" >> $GITHUB_PATH  # Ensure Fly.io is in PATH
 
       - name: Deploy UI to Fly.io
         run: |
