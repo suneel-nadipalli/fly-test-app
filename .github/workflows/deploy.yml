@@ -42,6 +42,7 @@ jobs:
         run: |
           curl -L https://fly.io/install.sh | sh
           echo "$HOME/.fly/bin" >> $GITHUB_PATH  # Ensure Fly.io is in PATH
+          echo "NEXT_PUBLIC_API_URL=$NEXT_PUBLIC_API_URL" >> .env.local
 
       - name: Deploy UI to Fly.io
         # env:
