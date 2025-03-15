@@ -12,7 +12,6 @@ const APITestPage = async () => {
 
   return (
     <>
-      <div>Welcome to the API Test Page - API Fix Pt 2!</div>
       <div>Message From API: {data.status}</div>
     </>
   );

@@ -38,7 +38,7 @@ def read_root():
 
 @app.get("/ping")
 def ping():
-    return {"status": "Update - Final Full Stack Deployment 2"}
+    return {"status": "Update - Final Full Stack Deployment 3"}
 
 @app.get("/users")
 def get_users():
